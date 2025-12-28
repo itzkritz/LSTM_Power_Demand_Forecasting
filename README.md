@@ -4,6 +4,7 @@ This repository contains a machine learning project that uses Long Short-Term Me
 
 
 📊 Dataset Overview
+
 The project utilizes the energy_dataset.csv, which includes:
 
 Time-series data: Hourly electricity consumption and generation across 29 different categories.
@@ -14,6 +15,7 @@ Target Variable: total load actual.
 
 
 🛠️ Key Steps
+
 Data Cleaning: Handled missing values in the dataset using mean imputation.
 
 Normalization: Scaled data using MinMaxScaler (0 to 1 range) to assist LSTM convergence.
