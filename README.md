@@ -1,25 +1,27 @@
-# LSTM_Power_Demand_Forecasting
+# Power Demand Forecasting (LSTM)
+# Overview
+This project uses Deep Learning to predict future electrical power demand. I built a Long Short-Term Memory (LSTM) neural network, which is a specialized type of AI that can "remember" past patterns in time-series data to make accurate future predictions.
 
-This repository contains a machine learning project that uses Long Short-Term Memory (LSTM) networks to predict hourly electrical load. Accurate forecasting is essential for power grid stability and optimizing energy generation.
+Accurate forecasting helps energy companies prevent power outages and manage resources more efficiently.
 
+# Key Features
+Automated Cleaning: Handles missing data through mean imputation.
 
-📊 Dataset Overview
+Time-Series Windowing: Converts raw data into sequences (using the last 25 hours to predict the next hour).
 
-The project utilizes the energy_dataset.csv, which includes:
+Deep Learning: Uses an LSTM architecture to capture complex trends that simple models miss.
 
-Time-series data: Hourly electricity consumption and generation across 29 different categories.
+Evaluation: Measures success using standard industry metrics (MAE, MSE, and RMSE).
 
-Features: Generation types (Biomass, Fossil, Nuclear, Wind, Solar), price data, and day-ahead forecasts.
+# Tech Stack
+Deep Learning: TensorFlow / Keras
 
-Target Variable: total load actual.
+Data Science: Pandas, NumPy, Scikit-Learn
 
+Visualization: Matplotlib
 
-🛠️ Key Steps
-
-Data Cleaning: Handled missing values in the dataset using mean imputation.
-
-Normalization: Scaled data using MinMaxScaler (0 to 1 range) to assist LSTM convergence.
-
-Feature Engineering: Created a sliding window with a look-back of 25 hours to predict the next hour's load.
-
-Architecture: Built a Sequential model with a 50-unit LSTM layer followed by a Dense output layer.
+# Model Results
+The model successfully learned the energy consumption patterns with very low error rates on the test data:
+Mean Absolute Error (MAE): 0.02174321748316288 MWh
+Mean Squared Error (MSE): 0.0008979527628980577 MWh
+Root Mean Squared Error (RMSE): 0.029965859955924136 MWh
