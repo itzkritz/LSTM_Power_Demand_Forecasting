@@ -22,6 +22,7 @@ Visualization: Matplotlib
 
 # Model Results
 The model successfully learned the energy consumption patterns with very low error rates on the test data:
+
 Mean Absolute Error (MAE): 0.02174321748316288 MWh
 
 Mean Squared Error (MSE): 0.0008979527628980577 MWh
