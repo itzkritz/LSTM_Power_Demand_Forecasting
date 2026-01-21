@@ -1,9 +1,7 @@
 Python
-
-Pandas and NumPy
-
+Pandas
+Numpy
 Scikit-learn
-
 TensorFlow/Keras
-
-Matplotlib and Seaborn
+Matplotlib
+Seaborn
